@@ -187,11 +187,175 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 .our__services-button:hover {
   background-color: #DB3138;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  -webkit-transition-timing-function: cubic-bezier;
-          transition-timing-function: cubic-bezier;
+}
+
+.main-car__contacts-address {
+  margin-top: 5.7vw;
+  width: 34vw;
+  height: 13vw;
+  border-top: 0.1vw solid #898989;
+  border-bottom: 0.1vw solid #898989;
+  border-right: 0.1px solid #898989;
+}
+
+.main-car__contacts-telephone {
+  margin-top: 5.7vw;
+  width: 34vw;
+  height: 13vw;
+  border-top: 0.1vw solid #898989;
+  border-bottom: 0.1vw solid #898989;
+  border-right: 0.1px solid #898989;
+  border-left: 0.1px solid #898989;
+}
+
+.main-car__contacts-operatingmode {
+  margin-top: 5.7vw;
+  width: 34vw;
+  height: 13vw;
+  border-top: 0.1vw solid #898989;
+  border-bottom: 0.1vw solid #898989;
+  border-left: 0.1px solid #898989;
+}
+
+.main-car__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adress__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adress__title-text {
+  margin-top: 3vw;
+  font-size: 1.4vw;
+}
+
+.adress__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adress__description-textfirst {
+  color: #DB3138;
+  font-size: 1.7vw;
+  margin-top: -0.3vw;
+}
+
+.adress__description-textsecond {
+  color: #DB3138;
+  font-size: 1.7vw;
+  margin-top: -1.7vw;
+}
+
+.telephone__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.telephone-text {
+  margin-top: 3vw;
+  font-size: 1.4vw;
+}
+
+.adresstelephone__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adress__telephone-textfirst {
+  color: #DB3138;
+  font-size: 1.7vw;
+  margin-top: -0.3vw;
+}
+
+.adress__telephone-textsecond {
+  color: #DB3138;
+  font-size: 1.7vw;
+  margin-top: -1vw;
+}
+
+.operatingmode__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.operatingmode-text {
+  margin-top: 3vw;
+  font-size: 1.4vw;
+}
+
+.adressoperatingmode__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adressoperatingmode__description-textfirst {
+  color: #DB3138;
+  font-size: 1.7vw;
+  margin-top: -0.3vw;
+}
+
+.adressoperatingmode__description-textsecond {
+  color: #DB3138;
+  font-size: 1.7vw;
+  margin-top: -1vw;
 }

@@ -33,6 +33,30 @@
   transform: rotate(45deg);
 }
 
+@mixin contactsbox() {
+  margin-top: 5.7vw;
+  width: 34vw;
+  height: 13vw;
+  border-top: 0.1vw solid #898989;
+  border-bottom: 0.1vw solid #898989;
+}
+
+@mixin conctacttext() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin contactdescription() {
+  color: #DB3138;
+  font-size: 1.7vw;
+}
+
+@mixin contacttitle() {
+  margin-top: 3vw;
+  font-size: 1.4vw;
+}
+
 li {
   list-style-type: none; 
   font-size: 1.5vw;
@@ -145,9 +169,95 @@ li {
   white-space: nowrap;
   display: flex;
   align-items: center;
+  transition: background-color 0.4s ease;
   &:hover {
     background-color: #DB3138;
-    transition-duration: 0.4s; 
-    transition-timing-function: cubic-bezier;
-  }
+  } 
+}
+
+.main-car__contacts-address {
+  @include contactsbox();
+  border-right: 0.1px solid #898989;
+}
+
+.main-car__contacts-telephone {
+  @include contactsbox();
+  border-right: 0.1px solid #898989;
+  border-left: 0.1px solid #898989;
+}
+
+.main-car__contacts-operatingmode {
+  @include contactsbox();
+  border-left: 0.1px solid #898989;
+}
+
+.main-car__contacts {
+  display: flex;
+  align-items: center;
+}
+
+.adress__title {
+  @include conctacttext();
+}
+
+.adress__title-text {
+  @include contacttitle();
+}
+
+.adress__description{
+  @include conctacttext();
+}
+
+.adress__description-textfirst{
+@include contactdescription();
+margin-top: -0.3vw;
+}
+
+.adress__description-textsecond {
+@include contactdescription();
+margin-top: -1.7vw;
+}
+
+.telephone__title {
+  @include conctacttext();
+}
+
+.telephone-text {
+  @include contacttitle();
+}
+
+.adresstelephone__description {
+  @include conctacttext();
+}
+
+.adress__telephone-textfirst {
+  @include contactdescription();
+  margin-top: -0.3vw;
+}
+
+.adress__telephone-textsecond {
+  @include contactdescription();
+  margin-top: -1vw;
+}
+
+.operatingmode__title {
+  @include conctacttext();
+}
+
+.operatingmode-text {
+  @include contacttitle();
+}
+
+.adressoperatingmode__description {
+  @include conctacttext();
+}
+
+.adressoperatingmode__description-textfirst {
+  @include contactdescription();
+  margin-top: -0.3vw;
+}
+
+.adressoperatingmode__description-textsecond {
+  @include contactdescription();
+  margin-top: -1vw;
 }
