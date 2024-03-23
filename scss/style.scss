@@ -1,0 +1,153 @@
+* {
+  font-family: "Alumni Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+}
+
+* body {
+  margin: 0vw;
+  top: 0vw;
+  background-color: rgb(20, 20, 20);
+}
+
+* p { 
+  color: white;
+}
+
+  
+* a {
+  color: white;
+}
+  
+@mixin menuline() {
+  width: 3.5vw;
+	height: 0.2vw;
+  background-color: #DB3138;
+}
+
+@mixin diamonds() {
+  width: 0.7vw;
+	height: 0.7vw;
+	background: #DB3138;
+  transform: rotate(45deg);
+}
+
+li {
+  list-style-type: none; 
+  font-size: 1.5vw;
+  }
+  
+.main-car__picturebacground img {
+  position: absolute; 
+  top: 0;
+  left: 0; 
+  height: 57vw;
+  width: 100vw;
+  opacity: 0.4;
+  z-index: -1;
+}
+  
+.nav__link {    
+  text-decoration: none;
+}
+  
+.nav__navbar {
+  margin-left: 10vw;
+  display: flex;
+  text-decoration: none;
+  gap: 3vw;
+}
+  
+.nav__line-first {
+  @include menuline();
+}
+
+.nav__line-second {
+  @include menuline();
+  margin-left: -10px;
+}
+
+.nav__line-third {
+  @include menuline();
+}
+  
+.nav__line {
+  margin-right: 20vw;
+  margin-top: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.nav { 
+  margin-top: 1vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-car__hellotext{
+  margin-top: -3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  & h1 {
+    color: #DB3138;
+    font-size: 11vw;
+  }
+}
+
+.diamondsline__first {
+  @include diamonds();
+}
+
+.diamondsline__second {
+  @include diamonds();
+}
+
+.diamondsline__third {
+  @include diamonds();
+}
+
+.diamondsline__fourth {
+  @include diamonds();
+}
+
+.diamondsline {
+  margin-top: -9vw;
+  display: flex;
+  gap: 3vw;
+}
+
+.description-first {
+  font-size: 2vw;
+}
+
+.description-second {
+  font-size: 2vw;
+  margin-top: -2vw;
+}
+
+.main-car__description { 
+  margin-top: 1vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.our__services-button {
+  width: 7vw; 
+  height: 3vw; 
+  background: linear-gradient(90deg, #DB3138 70%, transparent 70%); 
+  border: none; 
+  font-size: 1.6vw; 
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: #DB3138;
+    transition-duration: 0.4s; 
+    transition-timing-function: cubic-bezier;
+  }
+}
