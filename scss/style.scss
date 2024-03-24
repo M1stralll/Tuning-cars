@@ -169,7 +169,7 @@ li {
   white-space: nowrap;
   display: flex;
   align-items: center;
-  transition: background-color 0.4s ease;
+  transition: background-color 0.3s linear;
   &:hover {
     background-color: #DB3138;
   } 
@@ -260,4 +260,54 @@ margin-top: -1.7vw;
 .adressoperatingmode__description-textsecond {
   @include contactdescription();
   margin-top: -1vw;
+}
+
+.achievements__diamondsline {
+  display: flex;
+  gap: 3vw;
+}
+
+.achievements__title-text {
+  font-size: 3.5vw;
+}
+
+.achievements__description-text {
+  font-size: 1.2vw;
+  margin-top: 4vw;
+}
+
+.achievements__box__title {
+  display: flex;
+}
+
+.achievements__box-first {
+  width: 18vw;
+  height: 12vw;
+  border: 0.1vw solid #898989;
+}
+
+.achievements__box__title-texthashtag {
+  color: #DB3138;
+  font-size: 2vw;
+}
+
+.achievements__box__title-textnumber {
+  color: #DB3138;
+  font-size: 4vw;
+  margin-top: 0.2vw;
+}
+
+.achievements__box__description {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.achievements__box__description-textfirst{
+font-size: 1.4vw;
+}
+
+.achievements__box__description-textsecond {
+font-size: 1.4vw;
+margin-top: -1vw;
 }
