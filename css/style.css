@@ -372,7 +372,7 @@ li {
 }
 
 .achievements__description-text {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   margin-top: 4vw;
 }
 
@@ -380,11 +380,33 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.2vw;
 }
 
 .achievements__box-first {
-  width: 18vw;
-  height: 12vw;
+  width: 17vw;
+  height: 10vw;
+  border: 0.1vw solid #898989;
+}
+
+.achievements__box-second {
+  width: 17vw;
+  height: 10vw;
+  border: 0.1vw solid #898989;
+}
+
+.achievements__box-third {
+  width: 17vw;
+  height: 10vw;
+  border: 0.1vw solid #898989;
+}
+
+.achievements__box-fourth {
+  width: 17vw;
+  height: 10vw;
   border: 0.1vw solid #898989;
 }
 
@@ -410,13 +432,69 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: -5.5vw;
 }
 
 .achievements__box__description-textfirst {
-  font-size: 1.4vw;
+  font-size: 1.2vw;
 }
 
 .achievements__box__description-textsecond {
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   margin-top: -1vw;
+}
+
+.achievements__page {
+  margin-top: -11vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5vw;
+}
+
+.achievements__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.achievements__column-right {
+  margin-top: 28vw;
+}
+
+.achievements__column-left {
+  margin-top: 25vw;
+}
+
+.achievements__box__titlepicture {
+  margin-top: 0.8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.achievements__box__titlepicture img {
+  width: 2.7vw;
+  height: 3vw;
+}
+
+.achievements__box__descriptionpicture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

@@ -57,6 +57,12 @@
   font-size: 1.4vw;
 }
 
+@mixin achievementsbox() {
+  width: 17vw;
+  height: 10vw;
+  border: 0.1vw solid #898989;
+}
+
 li {
   list-style-type: none; 
   font-size: 1.5vw;
@@ -272,18 +278,30 @@ margin-top: -1.7vw;
 }
 
 .achievements__description-text {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   margin-top: 4vw;
 }
 
 .achievements__box__title {
   display: flex;
+  justify-content: center;
+  margin-top: 0.2vw;
 }
 
 .achievements__box-first {
-  width: 18vw;
-  height: 12vw;
-  border: 0.1vw solid #898989;
+  @include achievementsbox();
+}
+
+.achievements__box-second {
+  @include achievementsbox();
+}
+
+.achievements__box-third {
+  @include achievementsbox();
+}
+
+.achievements__box-fourth {
+  @include achievementsbox();
 }
 
 .achievements__box__title-texthashtag {
@@ -298,16 +316,54 @@ margin-top: -1.7vw;
 }
 
 .achievements__box__description {
-display: flex;
-align-items: center;
-flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -5.5vw;
 }
 
 .achievements__box__description-textfirst{
-font-size: 1.4vw;
+  font-size: 1.2vw;
 }
 
 .achievements__box__description-textsecond {
-font-size: 1.4vw;
-margin-top: -1vw;
+  font-size: 1.2vw;
+  margin-top: -1vw;
+}
+
+.achievements__page {
+  margin-top: -11vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.achievements__column {
+  display: flex;
+}
+
+.achievements__column-right {
+  margin-top: 28vw;
+}
+
+.achievements__column-left {
+  margin-top: 25vw;
+
+}
+
+.achievements__box__titlepicture {
+  margin-top: 0.8vw;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 2.7vw;
+    height: 3vw;
+  }
+}
+
+.achievements__box__descriptionpicture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
