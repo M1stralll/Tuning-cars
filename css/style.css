@@ -11,11 +11,7 @@
   background-color: rgb(20, 20, 20);
 }
 
-* p {
-  color: white;
-}
-
-* a {
+* p, a {
   color: white;
 }
 
@@ -497,4 +493,115 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.slidercar__blockfirst img {
+  width: 25vw;
+  height: 21vw;
+}
+
+.slidercar__blocksecond img {
+  width: 25vw;
+  height: 21vw;
+}
+
+.slidercar__blockthird img {
+  width: 25vw;
+  height: 21vw;
+}
+
+.slidercar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3vw;
+}
+
+.slidercar__block {
+  margin: auto;
+  margin-top: -2.5vw;
+  position: relative;
+  z-index: 3;
+  background-color: #DB3138;
+  width: 23vw;
+  height: 4.5vw;
+}
+
+.slider__block-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider__block-text p {
+  font-size: 1.4vw;
+}
+
+.slider__secondline {
+  margin-top: -1vw;
+}
+
+.slider__thirdline {
+  margin-top: -1vw;
+}
+
+.swiper__square {
+  width: 3.5vw;
+  height: 3.5vw;
+  border: 0.3vw solid #DB3138;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+.swiper__square:hover {
+  background-color: #DB3138;
+}
+
+.arrow-left {
+  margin-top: 1.125vw;
+  margin-left: 1.125vw;
+  width: 1vw;
+  height: 1vw;
+  border-bottom: 0.3vw solid #ffffff;
+  border-right: 0.3vw solid #ffffff;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.arrow-right {
+  margin-top: 1.125vw;
+  margin-left: 1.125vw;
+  width: 1vw;
+  height: 1vw;
+  border-top: 0.3vw solid #ffffff;
+  border-left: 0.3vw solid #ffffff;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.slider__car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3vw;
+  margin-top: 7vw;
 }
