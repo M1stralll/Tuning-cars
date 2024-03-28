@@ -558,8 +558,8 @@ li {
 }
 
 .swiper__square {
-  width: 3.5vw;
-  height: 3.5vw;
+  width: 2vw;
+  height: 2vw;
   border: 0.3vw solid #DB3138;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -571,10 +571,10 @@ li {
 }
 
 .arrow-left {
-  margin-top: 1.125vw;
-  margin-left: 1.125vw;
-  width: 1vw;
-  height: 1vw;
+  margin-top: 0.642vw;
+  margin-left: 0.642vw;
+  width: 0.571vw;
+  height: 0.571vw;
   border-bottom: 0.3vw solid #ffffff;
   border-right: 0.3vw solid #ffffff;
   -webkit-transform: rotate(90deg);
@@ -582,10 +582,10 @@ li {
 }
 
 .arrow-right {
-  margin-top: 1.125vw;
-  margin-left: 1.125vw;
-  width: 1vw;
-  height: 1vw;
+  margin-top: 0.642vw;
+  margin-left: 0.642vw;
+  width: 0.571vw;
+  height: 0.571vw;
   border-top: 0.3vw solid #ffffff;
   border-left: 0.3vw solid #ffffff;
   -webkit-transform: rotate(90deg);
@@ -604,4 +604,79 @@ li {
           align-items: center;
   gap: 3vw;
   margin-top: 7vw;
+}
+
+.recommendations__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recommendations__title-pictureimg {
+  width: 2.5vw;
+  height: 4vw;
+}
+
+.recommendations__title-text p {
+  font-size: 2.1vw;
+}
+
+.recommendations__picture img {
+  width: 35vw;
+  height: 32vw;
+}
+
+.recommendations__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10vw;
+  gap: 12.5vw;
+}
+
+.recommendations__description-text {
+  font-size: 1.3vw;
+}
+
+.recommendations__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recommendations__guarantee {
+  margin-right: 4vw;
+}
+
+.recommendations__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4vw;
 }

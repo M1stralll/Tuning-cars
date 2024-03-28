@@ -417,8 +417,8 @@ margin-top: -1.7vw;
 }
 
 .swiper__square {
-  width: 3.5vw;
-  height: 3.5vw;
+  width: 2vw;
+  height: 2vw;
   border: 0.3vw solid #DB3138;
   transform: rotate(45deg);
   transition: background-color 0.2s linear;
@@ -428,20 +428,20 @@ margin-top: -1.7vw;
 }
 
 .arrow-left {
-  margin-top: 1.125vw;
-  margin-left: 1.125vw;
-  width: 1vw;
-  height: 1vw;
+  margin-top: 0.642vw;
+  margin-left: 0.642vw;
+  width: 0.571vw;
+  height: 0.571vw;
   border-bottom: 0.3vw solid #ffffff;
   border-right: 0.3vw solid #ffffff;
   transform: rotate(90deg);
 }
 
 .arrow-right {
-  margin-top: 1.125vw;
-  margin-left: 1.125vw;
-  width: 1vw;
-  height: 1vw;
+  margin-top: 0.642vw;
+  margin-left: 0.642vw;
+  width: 0.571vw;
+  height: 0.571vw;
   border-top: 0.3vw solid #ffffff;
   border-left: 0.3vw solid #ffffff;
   transform: rotate(90deg);
@@ -453,4 +453,59 @@ margin-top: -1.7vw;
   align-items: center;
   gap: 3vw;
   margin-top: 7vw;
+}
+
+.recommendations__title {
+display: flex;
+gap: 2vw;
+align-items: center;
+}
+
+.recommendations__title-picture {
+
+  &img {
+    width: 2.5vw;
+    height: 4vw;
+  }
+}
+
+.recommendations__title-text p {
+  font-size: 2.1vw;
+}
+
+.recommendations__picture {
+  & img {
+    width: 35vw;
+    height: 32vw;
+  }
+}
+
+.recommendations__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vw;
+  gap: 12.5vw;
+}
+
+.recommendations__description-text {
+  font-size: 1.3vw;
+}
+
+.recommendations__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommendations__guarantee {
+  margin-right: 4vw;
+}
+
+.recommendations__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
 }
