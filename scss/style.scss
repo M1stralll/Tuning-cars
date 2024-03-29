@@ -65,6 +65,15 @@
   }
 }
 
+@mixin choicedetailingtext() {
+  display: flex;
+  justify-content: center;
+  & p {
+    font-size: 1.5vw;
+    margin-top: 0.8vw;
+  }
+}
+
 li {
   list-style-type: none; 
   font-size: 1.5vw;
@@ -428,8 +437,8 @@ margin-top: -1.7vw;
 }
 
 .arrow-left {
-  margin-top: 0.642vw;
-  margin-left: 0.642vw;
+  margin-top: 0.575vw;
+  margin-left: 0.575vw;
   width: 0.571vw;
   height: 0.571vw;
   border-bottom: 0.3vw solid #ffffff;
@@ -438,8 +447,8 @@ margin-top: -1.7vw;
 }
 
 .arrow-right {
-  margin-top: 0.642vw;
-  margin-left: 0.642vw;
+  margin-top: 0.575vw;
+  margin-left: 0.575vw;
   width: 0.571vw;
   height: 0.571vw;
   border-top: 0.3vw solid #ffffff;
@@ -461,11 +470,27 @@ gap: 2vw;
 align-items: center;
 }
 
-.recommendations__title-picture {
+.recommendations__title-picturematerials {
 
-  &img {
-    width: 2.5vw;
-    height: 4vw;
+  & img {
+    width: 3.5vw;
+    height: 4.5vw;
+  }
+}
+
+.recommendations__title-pictureexperience {
+
+  & img {
+    width: 4vw;
+    height: 2.7vw;
+  }
+}
+
+.recommendations__title-pictureguarantee {
+
+  & img {
+    width: 3.5vw;
+    height: 3.5vw;
   }
 }
 
@@ -481,15 +506,13 @@ align-items: center;
 }
 
 .recommendations__block {
+  margin-top: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10vw;
-  gap: 12.5vw;
-}
-
-.recommendations__description-text {
-  font-size: 1.3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  gap: 15.5vw;
 }
 
 .recommendations__description {
@@ -497,6 +520,12 @@ align-items: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.recommendations__description-text {
+  & p {
+    font-size: 1.4vw;
+  }
 }
 
 .recommendations__guarantee {
@@ -508,4 +537,39 @@ align-items: center;
   justify-content: center;
   align-items: center;
   gap: 4vw;
+}
+
+.recommendations__slider-text {
+  & p {
+    font-size: 1.3vw;
+  }
+}
+
+.services__title {
+  & p {
+    font-size: 3.5vw;
+  }
+}
+
+.services__choice__blockpasting__text {
+  @include choicedetailingtext();
+}
+
+.services__choice__blockpasting {
+  width: 8.3vw;
+  height: 3.3vw;
+  background-color: #DB3138;
+}
+
+.services__choice__detailing {
+  width: 8.3vw;
+  height: 3.3vw;
+  transition: background-color 0.2s linear;
+  &:hover {
+    background-color: #DB3138;
+  } 
+}
+
+.services__choice__blockdetailing__text {
+  @include choicedetailingtext();
 }

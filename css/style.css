@@ -571,8 +571,8 @@ li {
 }
 
 .arrow-left {
-  margin-top: 0.642vw;
-  margin-left: 0.642vw;
+  margin-top: 0.575vw;
+  margin-left: 0.575vw;
   width: 0.571vw;
   height: 0.571vw;
   border-bottom: 0.3vw solid #ffffff;
@@ -582,8 +582,8 @@ li {
 }
 
 .arrow-right {
-  margin-top: 0.642vw;
-  margin-left: 0.642vw;
+  margin-top: 0.575vw;
+  margin-left: 0.575vw;
   width: 0.571vw;
   height: 0.571vw;
   border-top: 0.3vw solid #ffffff;
@@ -616,9 +616,19 @@ li {
           align-items: center;
 }
 
-.recommendations__title-pictureimg {
-  width: 2.5vw;
-  height: 4vw;
+.recommendations__title-picturematerials img {
+  width: 3.5vw;
+  height: 4.5vw;
+}
+
+.recommendations__title-pictureexperience img {
+  width: 4vw;
+  height: 2.7vw;
+}
+
+.recommendations__title-pictureguarantee img {
+  width: 3.5vw;
+  height: 3.5vw;
 }
 
 .recommendations__title-text p {
@@ -631,6 +641,7 @@ li {
 }
 
 .recommendations__block {
+  margin-top: 10vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -640,12 +651,9 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10vw;
-  gap: 12.5vw;
-}
-
-.recommendations__description-text {
-  font-size: 1.3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  gap: 15.5vw;
 }
 
 .recommendations__description {
@@ -664,6 +672,10 @@ li {
           align-items: center;
 }
 
+.recommendations__description-text p {
+  font-size: 1.4vw;
+}
+
 .recommendations__guarantee {
   margin-right: 4vw;
 }
@@ -679,4 +691,54 @@ li {
       -ms-flex-align: center;
           align-items: center;
   gap: 4vw;
+}
+
+.recommendations__slider-text p {
+  font-size: 1.3vw;
+}
+
+.services__title p {
+  font-size: 3.5vw;
+}
+
+.services__choice__blockpasting__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.services__choice__blockpasting__text p {
+  font-size: 1.5vw;
+  margin-top: 0.8vw;
+}
+
+.services__choice__blockpasting {
+  width: 8.3vw;
+  height: 3.3vw;
+  background-color: #DB3138;
+}
+
+.services__choice__detailing {
+  width: 8.3vw;
+  height: 3.3vw;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+.services__choice__detailing:hover {
+  background-color: #DB3138;
+}
+
+.services__choice__blockdetailing__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.services__choice__blockdetailing__text p {
+  font-size: 1.5vw;
+  margin-top: 0.8vw;
 }
