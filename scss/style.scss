@@ -22,8 +22,8 @@
 }
 
 @mixin diamonds() {
-  width: 0.7vw;
-	height: 0.7vw;
+  width: 0.5vw;
+	height: 0.5vw;
 	background: #DB3138;
   transform: rotate(45deg);
 }
@@ -281,7 +281,7 @@ margin-top: -1.7vw;
 
 .achievements__diamondsline {
   display: flex;
-  gap: 3vw;
+  gap: 2vw;
 }
 
 .achievements__title-text {
@@ -501,7 +501,7 @@ align-items: center;
 .recommendations__picture {
   & img {
     width: 35vw;
-    height: 32vw;
+    height: 36vw;
   }
 }
 
@@ -520,6 +520,7 @@ align-items: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1vw;
 }
 
 .recommendations__description-text {
@@ -536,7 +537,7 @@ align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4vw;
+  gap: 2vw;
 }
 
 .recommendations__slider-text {
@@ -546,6 +547,7 @@ align-items: center;
 }
 
 .services__title {
+  margin-bottom: -4.5vw;
   & p {
     font-size: 3.5vw;
   }
@@ -572,4 +574,101 @@ align-items: center;
 
 .services__choice__blockdetailing__text {
   @include choicedetailingtext();
+}
+
+.services__pastingblock {
+  width: 15vw;
+  height: 21vw;
+  border: 0.1vw solid #898989;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__pastingblock__titletext {
+  & p {
+    font-size: 1.2vw;
+    margin-bottom: -0.2vw;
+  }
+}
+
+.services__pastingblock__titlepicture {
+  & img {
+    width: 3vw;
+    height: 3vw;
+    margin-bottom: -0.85vw;
+  }
+}
+
+.services__pastingblock__description {
+  & p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1vw;
+  }
+}
+
+.services__pastingblock__detailed {
+  width: 5vw; 
+  height: 2vw; 
+  background: linear-gradient(90deg, #DB3138 51.7%, transparent 51.7%); 
+  border: none; 
+  font-size: 1vw; 
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s linear;
+  &:hover {
+    background-color: #DB3138;
+  } 
+}
+
+.services__pastingblock__titlepicturecolorfilms {
+  & img {
+    width: 2.7vw;
+    height: 3.5vw;
+    margin-bottom: -0.85vw;
+  }
+}
+
+.services__pastingblock__titlepicturedesign {
+  & img {
+    width: 3vw;
+    height: 2vw;
+    margin-bottom: -0.85vw;
+  }
+}
+
+.services__pastingblock__titlepictureinteriorwrap {
+  & img {
+    width: 3.5vw;
+    height: 3vw;
+    margin-bottom: -0.85vw;
+  }
+}
+
+.services__pasting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  margin-top: 2.5vw;
+}
+
+.services__choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
 }
